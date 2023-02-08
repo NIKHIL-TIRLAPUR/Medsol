@@ -28,6 +28,12 @@ public class Loginpage {
 	@FindBy(xpath="//button[contains(@class,'btn btn-primary')]")
 	WebElement loginbuttonsubmit;
 	
+	@FindBy(xpath="//div[@class='dropdown d-flex align-items-center py-4']//button[@id='dropdownMenuButton1']//*[name()='svg']")
+	WebElement logoutdropdown;
+	
+	@FindBy(xpath="//a[normalize-space()='Logout']")
+	WebElement logoutbutton;
+	
 	public void clickonlogin() {
 		loginbutton.click();
 	}
@@ -46,8 +52,13 @@ public class Loginpage {
 		loginbuttonsubmit.click();
 	}
 	
+	public void clickonlogoutdropdown() {
+		logoutdropdown.click();
+	}
 	
-	
+	public void clickonlogoutbutton() {
+		logoutbutton.click();
+	}
 	
 	
 	

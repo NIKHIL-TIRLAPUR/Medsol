@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class Adminpage {
 
@@ -31,6 +32,16 @@ public class Adminpage {
 	
 	@FindBy(name="phone")
     WebElement txtphonenum;
+	
+	/*@FindBy(name="dob")
+    WebElement txtdateofbirth;
+	
+	@FindBy(xpath="//input[@aria-label='Year']")
+    WebElement txtdateofyear;
+	
+	@FindBy(xpath="//select[contains(@class,'flatpickr-monthDropdown-months')]")
+    WebElement month;*/
+
 	
 	@FindBy(name="password")
     WebElement txtpassword;
@@ -61,13 +72,32 @@ public class Adminpage {
 	
 	public void setlastname(String lname)
 	{
-		txtlastname.sendKeys(lname);;
+		txtlastname.sendKeys(lname);
 	}
 	
 	public void setemailid(String id)
 	{
 		txtemailid.sendKeys(id);
 	}
+	
+	/*public void setdateofbirth()
+	{
+		txtdateofbirth.click();
+	}
+	
+	public void setdob(String mon,String yr,String dt)
+	{
+	
+	String month="March";
+	String year="1995";
+	String date="15";
+	
+		Select drop =new Select(month);
+		drop.selectByVisibleText(mon);
+		
+		Select drop =new Select(month);
+		drop.selectByVisibleText(mon);
+	}*/
 	
 	public void setphone(String num)
 	{
