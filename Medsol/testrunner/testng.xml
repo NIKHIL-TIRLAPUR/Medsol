@@ -4,15 +4,249 @@
 	<test name=" Login Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<!--<class name="com.medsol.testcases.TC_Logintest_created"/> -->
+			 <!--<class name="com.medsol.testcases.TC_Logintest_created"/> -->
+			
 			<!--<class name="com.medsol.testcases.TC_Admin_created" /> --> 
-			<!--<class name="com.medsol.testcases.TC_Accountant_created" /> -->  
+			<!--<class name="com.medsol.testcases.TC_Admin_modified" />  -->	
+			<!-- <class name="com.medsol.testcases.TC_Admin_delete" />-->
+
+			<!--<class name="com.medsol.testcases.TC_Accountant_created" /> --> 
+			  
 			<!--<class name="com.medsol.testcases.TC_Billings_created" /> --> 
-			<!--<class name="com.medsol.testcases.TC_LoginDDT_000" /> -->
+			<!--<class name="com.medsol.testcases.TC_Billings_modified" /> -->
+			<!--<class name="com.medsol.testcases.TC_Billings_delete" /> --> 
+			
+			<!--<class name="com.medsol.testcases.TC_LoginDDT_000" /> --> 
+			
 			<!--<class name="com.medsol.testcases.TC_Bedmanagement_created" /> --> 
+			<!--<class name="com.medsol.testcases.TC_Bedmanagement_modified" /> --> 
+			<!--<class name="com.medsol.testcases.TC_Bedmanagement_delete" /> -->
+			
 			<!--<class name="com.medsol.testcases.TC_Bloodbanktest_created" /> -->
-			<!--<class name="com.medsol.testcases.TC_Invoice_created" /> --> 
-			<class name="com.medsol.testcases.TC_Payments_created" /> 
+			<!--<class name="com.medsol.testcases.TC_Bloodbanktest_modified" /> -->
+			<!-- <class name="com.medsol.testcases.TC_Bloodbanktest_delete" />-->
+			
+			<!--<class name="com.medsol.testcases.TC_Billings_Invoice_created" /> --> 
+			<!--<class name="com.medsol.testcases.TC_Billings_Invoice_delete" /> -->
+			
+			<!--<class name="com.medsol.testcases.TC_Billings_Payments_created" /> -->   
+			<!--<class name="com.medsol.testcases.TC_Billings_Payments_modified" /> -->
+			<!--<class name="com.medsol.testcases.TC_Billings_Payments_delete" />-->
+			
+			<!--<class name="com.medsol.testcases.TC_Document_created" /> -->
+			<!--<class name="com.medsol.testcases.TC_Document_modified" /> -->
+			<!--<class name="com.medsol.testcases.TC_Document_delete" /> -->
+			
+			<!--<class name="com.medsol.testcases.TC_Billings_Advancepayment_created" /> -->
+			<!-- <class name="com.medsol.testcases.TC_Billings_Advancepayment_modified" />-->
+			<!--<class name="com.medsol.testcases.TC_Billings_Advancepayment_delete" /> -->
+			
+			<!--<class name="com.medsol.testcases.TC_Document_Documenttype_created" /> --> 
+			<!--<class name="com.medsol.testcases.TC_Document_Documenttype_modified" /> -->
+			<!--<class name="com.medsol.testcases.TC_Document_Documenttype_delete" /> -->
+			
+			<!--<class name="com.medsol.testcases.TC_Doctors_created" /> --> 
+			
+			<!-- <class name="com.medsol.testcases.TC_Doctors_Doctorsdepartment_created" />-->
+			<!--<class name="com.medsol.testcases.TC_Doctors_Doctorsdepartment_modified" /> -->
+			<!--<class name="com.medsol.testcases.TC_Doctors_Doctorsdepartment_delete" /> -->
+			
+			<!--<class name="com.medsol.testcases.TC_Bloodbank_Blooddonor_created" /> -->
+			<!--<class name="com.medsol.testcases.TC_Bloodbank_Blooddonor_modified" /> -->
+			<!--<class name="com.medsol.testcases.TC_Bloodbank_Blooddonor_delete" /> -->
+			
+			<!--<class name="com.medsol.testcases.TC_Bloodbank_BloodDonations_created" /> --> 
+		   <!--<class name="com.medsol.testcases.TC_Bloodbank_BloodDonations_modified" /> --> 
+		   <!--<class name="com.medsol.testcases.TC_Bloodbank_BloodDonations_delete" /> --> 
+
+		   <!--<class name="com.medsol.testcases.TC_Bloodbank_Bloodissues_created" /> -->
+			    
+		   <!--<class name="com.medsol.testcases.TC_Diagnosis_Diagnosiscategory_created" /> -->
+		   <!--<class name="com.medsol.testcases.TC_Diagnosis_Diagnosiscategory_modified" /> -->
+			<!--<class name="com.medsol.testcases.TC_Diagnosis_Diagnosiscategory_delete" /> --> 
+			    
+			<!--<class name="com.medsol.testcases.TC_Diagnosis_diagnosistest_created" /> -->  
+			  
+			<!-- <class name="com.medsol.testcases.TC_Finances_income_created" />-->  
+			<!--<class name="com.medsol.testcases.TC_Finances_income_modified" /> -->    
+			<!--<class name="com.medsol.testcases.TC_Finances_income_delete" /> -->   
+			
+			<!-- <class name="com.medsol.testcases.TC_Finances_expanses_created" /> -->
+			<!-- <class name="com.medsol.testcases.TC_Finances_expanses_modified" />--> 
+			<!-- <class name="com.medsol.testcases.TC_Finances_expanses_delete" />-->
+			    
+			    <!-- <class name="com.medsol.testcases.TC_Frontoffice_calllogs_created" />-->
+			    <!--<class name="com.medsol.testcases.TC_Frontoffice_calllogs_modified" /> -->
+			    <!-- <class name="com.medsol.testcases.TC_Frontoffice_calllogs_delete" />-->
+			    
+			  <!--<class name="com.medsol.testcases.TC_Frontoffice_visitors_create" /> --> 
+			   
+			   
+			   <!--<class name="com.medsol.testcases.TC_Frontoffice_postalreceive_create" /> -->
+			  <!--<class name="com.medsol.testcases.TC_Frontoffice_postalreceive_modified" /> -->  
+               <!--<class name="com.medsol.testcases.TC_Frontoffice_postalreceive_delete" /> -->    
+                  
+             <!--<class name="com.medsol.testcases.TC_Frontoffice_postaldispatch_create" /> -->     
+             <!--<class name="com.medsol.testcases.TC_Frontoffice_postaldispatch_modified" /> -->   
+              <!--<class name="com.medsol.testcases.TC_Frontoffice_postaldispatch_delete" /> -->  
+              
+             <!--<class name="com.medsol.testcases.TC_Frontcms_Frontcmsservices_created" /> --> 
+             
+              <!--<class name="com.medsol.testcases.TC_Frontcms_noticeboard_created" /> -->  
+               <!-- <class name="com.medsol.testcases.TC_Frontcms_noticeboard_modified" />-->  
+               <!--<class name="com.medsol.testcases.TC_Frontcms_noticeboard_delete" /> -->
+               
+              <!--<class name="com.medsol.testcases.TC_Frontcms_testimonials_created" /> --> 
+              <!--<class name="com.medsol.testcases.TC_Frontcms_testimonials_modified" /> --> 
+              <!--<class name="com.medsol.testcases.TC_Frontcms_testimonials_delete" /> --> 
+               
+               <!--<class name="com.medsol.testcases.TC_Hospitalcharges_chargecategories_created" /> -->
+              <!--<class name="com.medsol.testcases.TC_Hospitalcharges_chargecategories_modified" /> --> 
+               <!--<class name="com.medsol.testcases.TC_Hospitalcharges_chargecategories_delete" /> -->
+               
+               <!--<class name="com.medsol.testcases.TC_Hospitalcharges_charges_created" /> -->
+              <!--<class name="com.medsol.testcases.TC_Hospitalcharges_charges_modified" /> --> 
+               <!--<class name="com.medsol.testcases.TC_Hospitalcharges_charges_delete" /> -->
+               
+                <!--<class name="com.medsol.testcases.TC_Hospitalcharges_doctoropdcharges_created" /> --> 
+               
+              <!--<class name="com.medsol.testcases.TC_Inventorie_Itemscategories_created" /> --> 
+               <!--<class name="com.medsol.testcases.TC_Inventorie_Itemscategories_modified" /> -->
+              <!--<class name="com.medsol.testcases.TC_Inventorie_Itemscategories_delete" /> --> 
+               
+               <!--<class name="com.medsol.testcases.TC_Inventories_item_created" /> -->
+               <!--<class name="com.medsol.testcases.TC_Inventories_item_modified" /> -->
+               <!--<class name="com.medsol.testcases.TC_Inventories_item_delete" /> -->
+               
+               <!--<class name="com.medsol.testcases.TC_Inventories_item_stocks_created" /> -->
+               <!--<class name="com.medsol.testcases.TC_Inventories_item_stocks_modified" /> -->
+               <!--<class name="com.medsol.testcases.TC_Inventories_item_stocks_delete" /> -->
+               
+              <!--<class name="com.medsol.testcases.TC_Inventories_issued_items_created" />  -->
+               <!--<class name="com.medsol.testcases.TC_Inventories_issued_items_modified" /> -->
+              <!--<class name="com.medsol.testcases.TC_Inventories_issued_items_delete" /> --> 
+              
+              
+              <!--<class name="com.medsol.testcases.TC_Medicine_categories_created" /> -->
+              <!--<class name="com.medsol.testcases.TC_Medicine_categories_modified" /> -->
+              <!--<class name="com.medsol.testcases.TC_Medicine_categories_delete" /> -->
+              
+             <!--<class name="com.medsol.testcases.TC_Medicine_medicinebrand_created" /> --> 
+             <!--<class name="com.medsol.testcases.TC_Medicine_medicinebrand_modified" /> --> 
+              <!--<class name="com.medsol.testcases.TC_Medicine_medicinebrand_delete" /> -->
+              
+              <!--<class name="com.medsol.testcases.TC_Medicine_medicine_created" /> -->
+              <!--<class name="com.medsol.testcases.TC_Medicine_medicine_modified" /> -->
+              <!--<class name="com.medsol.testcases.TC_Medicine_medicine_delete" /> -->
+              
+              <!-- <class name="com.medsol.testcases.TC_Radiology_radiology_categories_created" />-->
+              <!-- <class name="com.medsol.testcases.TC_Radiology_radiology_categories_modified" />-->
+              <!-- <class name="com.medsol.testcases.TC_Radiology_radiology_categories_delete" />-->
+              
+              <!-- <class name="com.medsol.testcases.TC_Radiology_radiologytests_created" />-->
+              <!-- <class name="com.medsol.testcases.TC_Radiology_radiologytests_modified" />-->
+              <!-- <class name="com.medsol.testcases.TC_Radiology_radiologytests_delete" />-->
+              
+              <!-- <class name="com.medsol.testcases.TC_Pathology_pathologycategory_created" />-->
+              <!-- <class name="com.medsol.testcases.TC_Pathology_pathologycategory_modified" />-->
+              <!-- <class name="com.medsol.testcases.TC_Pathology_pathologycategory_delete" />-->
+              
+              <!-- <class name="com.medsol.testcases.TC_Pathology_pathologytests_created" />-->
+              <!-- <class name="com.medsol.testcases.TC_Pathology_pathologytests_modified" />-->
+              <!-- <class name="com.medsol.testcases.TC_Pathology_pathologytests_delete" />-->
+              
+              <!-- <class name="com.medsol.testcases.TC_Services_services_created" />-->
+              <!-- <class name="com.medsol.testcases.TC_Services_services_modified" />-->
+              <!-- <class name="com.medsol.testcases.TC_Services_services_delete" />-->
+              
+              <!-- <class name="com.medsol.testcases.TC_Services_insurances_created" />-->
+              <!-- <class name="com.medsol.testcases.TC_Services_insurances_modified" />-->
+              <!-- <class name="com.medsol.testcases.TC_Services_insurances_delete" />-->
+ 
+               <!-- <class name="com.medsol.testcases.TC_Services_package_created" />-->    
+               <!-- <class name="com.medsol.testcases.TC_Services_package_modified" />-->
+               <!-- <class name="com.medsol.testcases.TC_Services_package_delete" />-->
+               
+                     <!-- <class name="com.medsol.testcases.TC_Services_ambulances_created" />-->
+                     <!-- <class name="com.medsol.testcases.TC_Services_ambulances_modified" />-->    
+                     <!-- <class name="com.medsol.testcases.TC_Services_ambulances_delete" />-->
+                     
+                     <!-- <class name="com.medsol.testcases.TC_Services_ambulance_calls_created" />-->
+                     <!-- <class name="com.medsol.testcases.TC_Services_ambulance_calls_modified" />-->
+                     <!-- <class name="com.medsol.testcases.TC_Services_ambulance_calls_delete" />-->
+                     
+                     <!-- <class name="com.medsol.testcases.TC_Vaccinations_vaccinations_created" />-->
+                     <!-- <class name="com.medsol.testcases.TC_Vaccinations_vaccinations_modified" />-->
+                     <!--<class name="com.medsol.testcases.TC_Vaccinations_vaccinations_delete" /> -->
+                     
+                     <!-- <class name="com.medsol.testcases.TC_Vaccination_vaccinationed_patients_created" />-->
+                     <!-- <class name="com.medsol.testcases.TC_Vaccination_vaccinated_patients_modified" />-->
+                    <!--<class name="com.medsol.testcases.TC_Vaccination_vaccinated_patients_delete" /> --> 
+                    
+                    <!--<class name="com.medsol.testcases.TC_Users_created" /> -->
+                    <!-- <class name="com.medsol.testcases.TC_Users_modified" />-->
+                    
+                    
+               
+                     <!--<class name="com.medsol.testcases.TC_ipd_created" /> -->
+               
+                     <!--<class name="com.medsol.testcases.TC_Opd_created" /> --> 
+                    
+                    <!-- <class name="com.medsol.testcases.TC_Nurses_created" /> -->
+                    
+                     <!-- <class name="com.medsol.testcases.TC_Labtechnician_created" />-->
+                    
+                   <!-- <class name="com.medsol.testcases.TC_Pharmacists_created" /> -->  
+                     
+                     <!-- <class name="com.medsol.testcases.TC_Receptionists_created" />--> 
+                     
+                     <!-- <class name="com.medsol.testcases.TC_FrontCms_cms_home_created" />-->
+                     
+                     <!-- <class name="com.medsol.testcases.TC_FrontCms_aboutus_created" />-->
+                     
+                     <!-- <class name="com.medsol.testcases.TC_FrontCms_appiontment_created" />-->
+                     
+                     <!-- <class name="com.medsol.testcases.TC_FrontCms_appiontment_created" />-->
+                     
+                    <!--<class name="com.medsol.testcases.TC_FrontCms_termsandconditions_created" /> --> 
+                     
+                  <!-- <class name="com.medsol.testcases.TC_Patients_patients_created" />--> 
+                  
+                  <!-- <class name="com.medsol.testcases.TC_Patients_cases_created" />-->
+                  
+                  <!-- <class name="com.medsol.testcases.TC_Patients_casehandlers_created" />--> 
+                  
+                  <!-- <class name="com.medsol.testcases.TC_Patients_patientadmissions_created" />-->
+                  
+                  <!-- <class name="com.medsol.testcases.TC_Reports_birthreports_created" />-->
+                  
+                  <!-- <class name="com.medsol.testcases.TC_Reports_deathReports_created" />-->
+                  
+                  <!-- <class name="com.medsol.testcases.TC_Reports_investigationreports_created" />-->
+                  
+                 <!--<class name="com.medsol.testcases.TC_Reports_operationreports_created" /> --> 
+                 
+                 <!-- <class name="com.medsol.testcases.TC_Billings_employeepayrolls_created" />-->
+                 
+                 <!-- <class name="com.medsol.testcases.TC_Bedmanagement_beds_created" />-->
+                 
+                 <!--<class name="com.medsol.testcases.TC_Bedmanagement_beds_modified" /> -->
+                 
+                 <!-- <class name="com.medsol.testcases.TC_Settings_General_created" />-->
+                 
+                 <!-- <class name="com.medsol.testcases.TC_Settings_Hospital_schedule_created" />-->
+                 
+                 <!-- <class name="com.medsol.testcases.TC_Settings_Modulessetting_created" />-->
+                 
+                 <!-- <class name="com.medsol.testcases.TC_Settings_Currencies_created" />-->
+                 <!-- <class name="com.medsol.testcases.TC_Settings_Currencies_modified" />-->
+                 <!-- <class name="com.medsol.testcases.TC_Settings_Currencies_delete" />-->
+                 
+                 <!-- <class name="com.medsol.testcases.TC_Live_consultations_created" />-->
+                 
+                 <class name="com.medsol.testcases.TC_Live_consultations_livemeetings_created" />
+                 
+                  
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

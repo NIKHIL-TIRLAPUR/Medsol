@@ -2,10 +2,13 @@ package com.medsol.testcases;
 
 import java.util.List;
 
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -17,8 +20,11 @@ public class Datepicker {
            
 
            WebDriverManager.chromedriver().setup();
+           ChromeOptions options = new ChromeOptions();
+   	    options.addArguments("--remote-allow-origins=*");
 
-           WebDriver driver = new ChromeDriver();
+           WebDriver driver = new ChromeDriver(options);
+           //WebDriver driver = new ChromeDriver();
 
            driver.manage().window().maximize();
 
@@ -33,6 +39,24 @@ public class Datepicker {
            driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Password@123");
 
            driver.findElement(By.xpath("//button[@type='submit']")).click();
+           
+           
+          /* driver.findElement(By.xpath("//body/div[1]/div[1]/div[1]/div[3]/ul[1]/li[5]/a[1]")).click();
+
+           Thread.sleep(3000);
+           
+           driver.findElement(By.xpath("//a[normalize-space()='Employee Payrolls']")).click();
+           Thread.sleep(3000);
+
+           driver.findElement(By.xpath("//a[normalize-space()='New Employee Payroll']")).click();
+
+           Thread.sleep(3000);*/
+           
+           
+           
+           
+           
+           
 
            driver.findElement(By.xpath("//span[normalize-space()='Accountants']")).click();
 
@@ -108,13 +132,64 @@ public class Datepicker {
 
            }
 
-          
+           driver.findElement(By.xpath("//input[@id='first_name']")).click();
+           driver.findElement(By.xpath("//input[@id='first_name']")).sendKeys("pavan");
+           
+           driver.findElement(By.xpath("//input[@id='last_name']")).click();
+           driver.findElement(By.xpath("//input[@id='last_name']")).sendKeys("pavan");
+           
+           driver.findElement(By.xpath("//input[@id='createAccountantEmail']")).click();
+           driver.findElement(By.xpath("//input[@id='createAccountantEmail']")).sendKeys("");
+           
+           
+           
+           
+           driver.findElement(By.xpath("//span[@id='select2-bloodGroup-container']")).click();
+           driver.findElement(By.xpath("//input[@role='searchbox']")).click();
+           driver.findElement(By.xpath("//input[@role='searchbox']")).sendKeys("O+");
+           driver.findElement(By.xpath("//input[@role='searchbox']")).sendKeys(Keys.ENTER);
+           
+           driver.findElement(By.xpath("//input[@id='designation']")).click();
+           driver.findElement(By.xpath("//input[@id='designation']")).clear();
+           driver.findElement(By.xpath("//input[@id='designation']")).sendKeys("admin"); 
+           
+          /* driver.findElement(By.xpath("//input[@id='sr_no']")).click();
+           driver.findElement(By.xpath("//input[@id='sr_no']")).clear();
+           driver.findElement(By.xpath("//input[@id='sr_no']")).sendKeys("11");
+           
+           driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[3]/span[2]/span[1]/span[1]/span[1]")).click();
+           driver.findElement(By.xpath("//input[@role='searchbox']")).click();
+           driver.findElement(By.xpath("//input[@role='searchbox']")).sendKeys("Accountant");
+           driver.findElement(By.xpath("//input[@role='searchbox']")).sendKeys(Keys.ENTER);
+           
+           driver.findElement(By.xpath("//span[@id='select2-month-container']")).click();
+           driver.findElement(By.xpath("//input[@role='searchbox']")).click();
+           driver.findElement(By.xpath("//input[@role='searchbox']")).sendKeys("March");
+           driver.findElement(By.xpath("//input[@role='searchbox']")).sendKeys(Keys.ENTER);
+           
+           driver.findElement(By.xpath("//input[@id='year']")).click();
+           driver.findElement(By.xpath("//input[@id='year']")).sendKeys("2020");
+           
+           driver.findElement(By.xpath("//span[@id='select2-status-container']")).click();
+           driver.findElement(By.xpath("//input[@role='searchbox']")).click();
+           driver.findElement(By.xpath("//input[@role='searchbox']")).sendKeys("Paid");
+           driver.findElement(By.xpath("//input[@role='searchbox']")).sendKeys(Keys.ENTER);
+           
+           driver.findElement(By.xpath("//input[@id='editBasicSalary']")).click();
+           driver.findElement(By.xpath("//input[@id='editBasicSalary']")).sendKeys("20000");*/
+           
+           
+           driver.findElement(By.xpath("//div[@class='iti__arrow']")).click();
+           Thread.sleep(2000);
+           driver.findElement(By.xpath("//ul[@id='iti-8__country-listbox']//li[@id='iti-8__item-al']")).click();
+           
+           
+           Thread.sleep(3000);
+          //String yeartext= driver.findElement(By.xpath("//input[@aria-label='Year']")).getText();
 
-          
+         //System.out.println(yeartext);
 
-          
-
-          
+          //driver.quit();
 
           
 

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.medsol.testcases.TC_LoginDDT_000">
+      <class name="com.medsol.testcases.TC_Services_insurances_created">
         <methods>
-          <include name="LoginDDT"/>
+          <include name="Services_insurancespagetest"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.medsol.testcases.TC_LoginDDT_000 -->
+      </class> <!-- com.medsol.testcases.TC_Services_insurances_created -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

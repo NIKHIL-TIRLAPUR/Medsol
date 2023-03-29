@@ -1,10 +1,13 @@
 package com.medsol.testcases;
 
+import java.time.Duration;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
@@ -16,7 +19,7 @@ import com.medsol.utilities.Readconfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Baseclass {
-
+ 
 	Readconfig config= new Readconfig();
 	
 	public String baseurl=config.getapplicationurl();
@@ -34,7 +37,9 @@ public class Baseclass {
 		{
 		//System.setProperty("webdriver.chrome.driver", config.getChromepath());
 	    WebDriverManager.chromedriver().setup();
-		driver= new ChromeDriver();
+	    ChromeOptions options = new ChromeOptions();
+	    options.addArguments("--remote-allow-origins=*");
+		driver= new ChromeDriver(options);
 		}
 		else if(br.equals("firefox"))
 		{
@@ -46,6 +51,7 @@ public class Baseclass {
 			System.setProperty("webdriver.ie.driver", config.getIEpath());
 			driver= new InternetExplorerDriver();
 		}
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(baseurl);
 		driver.manage().window().maximize();
 		 Thread.sleep(5000);
@@ -74,9 +80,17 @@ public class Baseclass {
 		return (generatedstring2);
 	}
 	
+	public void scrolldown()
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,8000)", "");
+	}
 	
-	
-	
+	public void scrolldown1()
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,400)", "");
+	}
 	
 	
 	

@@ -55,7 +55,7 @@ public class Accountantspage {
 	@FindBy(xpath="//input[@aria-label='Year']")
     WebElement txtyearindob;
 	
-	@FindBy(xpath="//select[@aria-label='Month']")
+	@FindBy(xpath="//select[@aria-label='Month']")//select[@aria-label='Month']
     WebElement txtmonthindob;
 	
 	@FindBy(xpath="//div[@class='dayContainer']/span")
